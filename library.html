@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library Management System</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <h1>Library Management System</h1>
+
+    <form id="bookForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="year" placeholder="Year" required>
+        <input type="text" id="branch" placeholder="Branch" required>
+        <input type="text" id="regNo" placeholder="Registered Number" required>
+        <input type="text" id="bookName" placeholder="Book Name" required>
+        <input type="text" id="bookNo" placeholder="Book Number" required>
+        <input type="date" id="dueDate" required>
+        <select id="returned">
+            <option value="Returned">Returned</option>
+            <option value="Not Returned">Not Returned</option>
+        </select>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Year</th>
+                <th>Registered Number</th>
+                <th>Book Name</th>
+                <th>Book Number</th>
+                <th>Due Date</th>
+                <th>Returned/Not</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="bookTableBody">
+            <!-- Rows will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="library.js"></script>
+</body>
+</html>

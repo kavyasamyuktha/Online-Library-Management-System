@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #000000;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, select {
+    margin: 10px;
+    padding: 10px;
+    flex: 1 1 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #000306;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #50575e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #000406;
+}
+
+button:active {
+    background-color: #80b0e6;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.actions button {
+    padding: 6px 12px;
+    margin: 0 5px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.actions button:hover {
+    background-color: #50575e;
+}
+
+.actions button.edit {
+    background-color: #50575e;
+}
+
+.actions button.edit:hover {
+    background-color: #50575e;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    .actions button {
+        padding: 8px 10px;
+        margin: 0 2px;
+    }
+}
